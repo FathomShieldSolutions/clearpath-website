@@ -1,14 +1,4 @@
 const root = document.documentElement;
-const toggle = document.querySelector('.theme-toggle');
-const themeColor = document.querySelector('meta[name="theme-color"]');
-function updateTheme() {
- const dark = root.dataset.theme === 'dark';
- toggle.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} theme`);
- toggle.setAttribute('aria-pressed', String(dark));
- themeColor.setAttribute('content', dark ? '#0c111b' : '#e8eff3');
-}
-toggle.hidden = false; updateTheme();
-toggle.addEventListener('click', () => { root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark'; try { localStorage.setItem('clearpath-site-theme', root.dataset.theme); } catch {} updateTheme(); });
 const menu = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#navigation');
 menu.hidden = false; root.classList.add('js');

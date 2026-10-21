@@ -13,9 +13,8 @@ Import this repository, choose **Other** as the framework preset, leave the buil
 ## Editing
 
 - `index.html`: content, navigation, FAQ, and app/contact links.
-- `styles.css`: responsive layout and ClearPath light/dark theme tokens.
-- `site.js`: mobile navigation, accessible workflow tabs, theme control.
-- `theme.js`: restores the selected theme before first paint.
+- `styles.css`: responsive layout and ClearPath light theme tokens.
+- `site.js`: mobile navigation and accessible workflow tabs.
 - `assets/clearpath-mark.png`: existing ClearPath brand artwork.
 - `404.html`: standalone not-found page.
 
